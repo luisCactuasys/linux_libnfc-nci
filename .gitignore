@@ -66,3 +66,6 @@ Makefile
 # Editor
 *.orig
 *.rej
+
+#m3
+.vscode*

@@ -6,6 +6,15 @@ Information about NXP NFC Controller can be found on [NXP website](https://www.n
 
 Further details about the stack [here](https://www.nxp.com/doc/AN11697).
 
+TUX100
+---------------
+In order to use this library in the new TUX100 terminal, it is necessary to port it to our board. Lucly this process is made simple by being very close the BeagleBone Black board that it is based on, below are the necessary steps:
+Please keep in mind that this library works at the user space level [here](https://www.nxp.com/doc/AN11697 pg.)
+
+- This library can be parameterized to work with the 
+    - In the file *phTmlNfc_alt.h*
+
+
 Release version
 ---------------
 R2.4 includes dynamic adaptation to the NFC Controller, multiple tags support, and some bug fixes (refer to the [documentation](https://www.nxp.com/doc/AN11697) for more details).
@@ -21,3 +30,5 @@ R1.0 is the first official release of Linux libnfc-nci stack
 Possible problems, known errors and restrictions of R2.4:
 ---------------------------------------------------------
 LLCP1.3 support requires OpenSSL Cryptography and SSL/TLS Toolkit (version 1.0.1j or later)
+
+
